@@ -1,0 +1,41 @@
+Start
+
+    Understand the Program's Purpose
+        Figure out what the program is meant to do, like managing course registrations.
+
+    Compile a List of Classes
+        Write down all the classes that will be part of the program.(course, student, register, and main class: studentform)
+        For each class, describe what it’s responsible for.
+		course: course name, course ID, semester, professor
+		student: first name, last name, student ID, program
+		register: registration date, number of course, classroom mode
+
+    Define User Scenarios
+        Create all lists fit with its methods
+        Link everything to the appropriate classes.
+
+    Evaluate Class Responsibilities
+        For each class:
+            Make sure it focuses on its responsibility.
+            Check that it deals with a specific function or feature.
+
+    Examine Class Interactions
+        Look at how the classes will work together:
+            Identify the main class that runs the program (where the main method: studentform is).
+            Note any helper classes that offer common functions.
+
+    Adopt an Iterative Development Approach
+        Start with class one-by-one based on order and priority to work on.
+        Once you finish a class, test it to make sure it works.
+        Proceed to the next class in the list.
+
+    Review and Improve
+        After the initial versions of the classes:
+	    Check if they run within themselves.
+            Check how they interact with each other.
+            Refine the code to enhance their connection and minimize unnecessary dependencies.
+    
+    Summary
+	Add comment, JAVADOC, UML, Algorithm, and Pseudocode
+
+End

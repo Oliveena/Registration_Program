@@ -1,0 +1,289 @@
+PSEUDO-CODE for Course
+
+START CLASS COURSE
+
+Create static method for color String yellow and reset.
+Create private String Variable program_name, course_name, program_ID, semester, professor.
+
+START Method setStudentCourse (Integer program_choice, Integer course_choice)
+    Call SWITCH choices for program
+        Case 1: Pure and Applied Sciences
+            Call switch choices for courses
+                course name of case 1 is Physics
+                course name of case 2 is Chemistry
+                course name of case 3 is Mathematics
+                course name of case 4 is Statistics
+        Case 2: Psychology
+            Call switch choices for courses
+                course name of case 1 is Human Development 101
+                course name of case 2 is Neuroscience
+                course name of case 3 is Brain Anatomy of a Developer
+                course name of case 4 is Childhood Development
+        Case 3: Computer Science
+            Call switch choices for courses
+                course name of case 1 is JAVA
+                course name of case 2 is SQL DATABASE
+                course name of case 3 is C++
+                course name of case 4 is PHP
+        Case 4: Fine Arts
+            Call switch choices for courses
+                course name of case 1 is Drawing
+                course name of case 2 is Sculpture
+                course name of case 3 is History of Art
+                course name of case 4 is Color Theory
+    End SWITCH
+END Method
+
+START Method setProgram_ID (Integer program_choice)
+    Set id an Integer that is random between 100 and 1000
+    Call SWITCH
+        program ID for case 1 is PAP combine with random id for Pure and Applied Science
+        program ID for case 2 is PSY combine with random id for Psychology
+        program ID for case 3 is CS  combine with random id for Computer Science
+        program ID for case 4 is FAR combine with random id for Fine Arts
+    End SWITCH
+END Method
+
+START Method displaySemester()
+    Call SWITCH
+        Display available semester options to the user between 1: Winter, 2: Spring, and 3: Summer.
+    End SWITCH
+END Method
+
+START Method setSemester(Integer semester_choice)
+    Call SWITCH
+        semester for case 1 is WINTER
+        semester for case 2 is SPRING
+        semester for case 3 is SUMMER
+    End SWITCH
+END Method
+
+START Method setProfessor(Integer professor_choice)
+    call SWITCH
+        professor name for case 1 is M. Bill Gates in Computer Science program
+        professor name for case 2 is M. Elon Musk in Pure and Applied Sciences program
+        professor name for case 3 is M. Khattar Daou in Psychology program
+        professor name for case 4 is M. Snoop Dogg in Fine Arts program
+    end SWITCH
+END Method
+
+START Method displayCourseInfo(Integer program_choice)
+    Call SWITCH
+        Case 1
+            Option 1 print Physics
+            Option 2 print Chemistry
+            Option 3 print Maths
+            Option 4 print Statistics
+        Case 2
+            Option 1 print Human Development 101
+            Option 2 print Neuroscience
+            Option 3 print Brain Anatomy and History
+            Option 4 print Childhood Development
+        Case 3
+            Option 1 print Java
+            Option 2 print SQL Database
+            Option 3 print C++
+            Option 4 print PHP language
+        Case 4
+            Option 1 print Drawing
+            Option 2 print Sculpture
+            Option 3 print History of Art
+            Option 4 print Color Theory
+    End SWITCH
+END Method
+
+START Method getProgramName()
+    return String of program name
+END Method
+
+START Method getCourseName()
+    return String of selected course
+END Method
+
+START Method getSemester
+    return String of selected semester
+END Method
+
+START Method getProfessor
+    return String of assigned professor
+END Method
+
+START Method getProgram_ID
+    return String of generated program ID.
+END Method
+
+END CLASS
+
+
+
+
+==============================================================================================================
+PSEUDO-CODE for Register
+
+START CLASS REGISTER
+Declare variables private integer numCourses and String mode
+Declare static color String green, yellow, and reset
+
+START Method to displayRegister()
+    set currentDate as current date
+    format currentDate as dd/MM/yyyy in String
+    print "Registration date is October 30, 2024"
+    print current date in green
+    print in yellow "WElCOME TO THE REGISTRATION.
+                        STEP 1: Student Registration.
+                             2: Program + Courses Selection.
+                             3: Each program has its unique ID.
+                             4: Your registration confirmation will be available in 'Info.txt'"
+END Method
+
+START Method display_programs():
+    Print in yellow " 1. Pure and Applied Sciences
+                      2. Psychology
+                      3. Computer Science
+                      4. Fine Arts"
+END Method
+
+START Method display_mode():
+    Print in yellow " 1. In Person
+                      2. Online
+                      3. Hybrid"
+END Method
+
+START Method setNumCourses(int numCourses)
+    set number of courses
+END Method
+
+START Method setMode
+    Call Switch
+        case 1 of mode is In Person
+        case 2 of mode is Online
+        case 3 of mode is Hybrid
+END Method
+
+START Method getNumberCourses
+    return the number of courses
+END Method
+
+START Method getMode
+    return the classroom mode
+END Method
+
+END CLASS
+
+
+
+
+===========================================================================================================
+PSEUDO-CODE for Student
+
+START CLASS STUDENT
+
+Create private String f_name, l_name, student_ID.
+
+START Method setStudentName(String f_name, String l_name)
+    Set the first name of the student
+    Set the last name of the student
+END Method
+
+START Method setStudent_ID(String f_name, String l_name)
+    Generate student ID based on student's names.
+    The ID consists of the uppercased initials of the first and last name followed by a random number between 100000 and 999999.
+END Method
+
+START Method getStudentName
+    return full name of the student
+END Method
+
+START Method getStudentID
+    return the student's ID
+END Method
+
+END CLASS
+
+
+
+
+=============================================================================================================
+PSEUDO-CODE for StudentForm
+
+// Declaration Phase
+Declare color String: red, green, yellow, and reset
+
+Declare input as new Scanner
+Declare register as new Register
+Declare course as new Course
+Declare student as new Student
+
+
+Declare f_name, l_name, student_ID as String
+Declare numOfCourses, program_choice, course_choice, semester_choice, mode_choice as Integer
+Declare String array nameCourses
+
+Display registration information
+
+Print message and ask user to enter first name
+Print message and ask user to enter last name
+Print in green color full student's name
+
+Set student ID
+Print student ID in green
+
+Print message and ask user to input their choice of program
+start do-while loop
+    try to run the code
+        if program choice is less than one then print "Please select at least 1 program"
+        if program choice is more than four then print "We offer only 4 programs"
+    catch exception for mismatched input
+        print "Invalid Entry! Please enter only numbers between 1 and 4."
+    while program choice is not 1,2,3,4.
+Set program and professor based on choice
+
+Print message and ask user to choose semester
+start do-while loop
+    try to run the code
+        if semester choice is not 1,2,3 then print "Select either 1,2, or 3 only!"
+    catch exception for mismatched input
+        print "Invalid Entry! Please enter only numbers between 1 and 3"
+    while semester is not in the option  1,2,3
+Set semester based on choice
+
+Print message and ask user to choose classroom mode
+star do-while loop
+    try to run the code
+        if mode choice is not 1,2,3 then print "Select either 1,2 or 3 only!"
+    catch exception for mismatched input
+        print "Invalid Entry! Please enter only numbers between 1 and 3"
+    while classroom mode is not in the option of 1,2,3
+Set classroom mode based on choice
+
+Print message and ask user to choose number of courses (1,2,3, or 4)
+start do-while loop
+    try to run the code
+        if number of courses is less than one then print "Please choose at least 1 course!"
+        if number of course is more than four then print "You choose too many courses!"
+    catch exception for mismatched input
+        print "Invalid Entry! Please enter only numbers between 1 and 4."
+    while number of course is less than one or more than four
+Set number of courses based on choice
+
+Print message and ask user to choose courses with the quantity they chose previously
+start do-while loop
+    try to run the code to check
+        while check course choice exist in course name
+            print "You cannot choose the same course twice, choose again."
+        if the course is valid
+            set student's course and assigns a professor, storing the course name in the array of selected courses
+        the counter is then incremented to track the number of courses chose
+        catch exception for mismatched input
+             print"Invalid Entry! Please enter only numbers between 1 and 4."
+        while counter is less than number of courses
+    while course choice is not 1,2,3,4
+
+    Summary with all messages and final input from users
+END METHOD
+END CLASS
+
+
+
+
+

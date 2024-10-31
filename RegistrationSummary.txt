@@ -1,0 +1,22 @@
+	SUMMARY:
+	=================================
+	YOUR STUDENT CREDENTIALS:
+	=================================
+
+	Your Full Name: 
+	anastassia tarassova
+	Your Student ID: 
+
+	AT236058
+	=================================
+	YOUR CLASSES' DETAILS:
+	=================================
+
+	Your program of choice is : 
+	Fine Arts
+
+	Your Professor for Fine Arts is : M. Snoop Dogg
+	Your semester of choice is : WINTER
+	Your choice of classroom mode is : In Person
+
+	Your registration summary has been saved to RegistrationSummary.txt
